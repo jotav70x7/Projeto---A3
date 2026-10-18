@@ -43,13 +43,60 @@ public class Cardápio {
 
                         case 1:
                             System.out.println("Você selecionou a receita de Banana frita.");
+
                             System.out.println("=============");
                             System.out.println("Ingredientes:");
                             System.out.println("=============");
+                           
+
+                            System.out.println("===============================");
+                            System.out.println("• 2 bananas maduras, mas firmes");
+                            System.out.println("• Óleo para fritar");
+                            System.out.println("===============================");
+                            
+
+                            System.out.println("================");
+                            System.out.println("Modo de preparo:");
+                            System.out.println("================");
+                           
+
+                            System.out.println("""
+                                                 Descasque as bananas;
+                                                 Corte-as ao meio ou em fatias;
+                                                 Aqueça o óleo em uma frigideira;
+                                                 Frite até dourarem dos dois lados;
+                                                 Retire e coloque sobre papel-toalha.
+                                                 """);
                             break;
 
                         case 2:
                             System.out.println("Você selecionou a receita de Beiju de tapioca.");
+
+                            System.out.println("=============");
+                            System.out.println("Ingredientes:");
+                            System.out.println("=============");                        
+
+
+                            System.out.println("==================================================");
+                            System.out.println("• 4 colheres de sopa de goma de tapioca hidratada.");
+                            System.out.println("• Uma pitada de sal, se desejar.");
+                            System.out.println("• Manteiga ou coco ralado, opcional.");
+                            System.out.println("==================================================");
+                            
+
+                            System.out.println("================");
+                            System.out.println("Modo de preparo:");
+                            System.out.println("================");
+
+
+                            System.out.println("""
+                                                Aqueça uma frigideira antiaderente;
+                                                Espalhe a goma de tapioca, formando uma camada fina;
+                                                Espere os grãos se unirem;
+                                                Vire, se necessário, e termine de cozinhar;
+                                                Recheie ou sirva simples.
+                                                """);
+                            
                             break;
 
                         case 3:
