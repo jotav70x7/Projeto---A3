@@ -145,8 +145,6 @@ public class Cardápio {
                     System.out.println("Tempo: aproximadamente 60 minutos.");
                     
                     
-
-
                     System.out.println("=============");
                     System.out.println("Ingredientes:");
                     System.out.println("=============");
