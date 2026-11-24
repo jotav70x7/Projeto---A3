@@ -1,10 +1,72 @@
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class GerenciadorReceitas {
 
     private Receita[] receitasEnviadas = new Receita[50];
     private int quantidade = 0;
+
+    private ArquivoTexto arquivoTexto = new ArquivoTexto();
+    private String nomeArquivo = "receitas.txt";
+
+    public GerenciadorReceitas() {
+        carregarReceitas();
+    }
+
+    private void salvarReceitas() {
+
+        String texto = "";
+
+        for (int i = 0; i < quantidade; i++) {
+
+            Receita receita = receitasEnviadas[i];
+
+            texto += receita.getNome() + "|";
+            texto += receita.getRegiao().getNome() + "|";
+            texto += receita.getCategoria().getNome() + "|";
+            texto += receita.getOrigem() + "|";
+            texto += receita.getDificuldade() + "|";
+            texto += receita.getTempo() + "|";
+            texto += receita.getIngredientes() + "|";
+            texto += receita.getModoPreparo() + "|";
+            texto += receita.getCuriosidade() + "|";
+            texto += receita.getAutor() + "|";
+            texto += receita.getStatus() + "\n";
+        }
+
+        arquivoTexto.salvar(nomeArquivo, texto);
+    }
+
+    private void carregarReceitas() {
+
+        ArrayList<String> linhas = arquivoTexto.lerLinhas(nomeArquivo);
+
+        for (String linha : linhas) {
+
+            String[] dados = linha.split("\\|", -1);
+
+            if (dados.length == 11 && quantidade < receitasEnviadas.length) {
+
+                Receita receita = new Receita(
+                        dados[0],
+                        new Regiao(dados[1]),
+                        new Categoria(dados[2]),
+                        dados[3],
+                        dados[4],
+                        dados[5],
+                        dados[6],
+                        dados[7],
+                        dados[8],
+                        dados[9],
+                        dados[10]
+                );
+
+                receitasEnviadas[quantidade] = receita;
+                quantidade++;
+            }
+        }
+    }
 
     public void enviarReceita(Scanner teclado, Usuario usuario) {
 
@@ -87,6 +149,8 @@ public class GerenciadorReceitas {
         receitasEnviadas[quantidade] = receita;
         quantidade++;
 
+        salvarReceitas();
+
         System.out.println("\nReceita enviada com sucesso!");
         System.out.println("Ela ficara aguardando a aprovacao do administrador.");
     }
@@ -158,10 +222,12 @@ public class GerenciadorReceitas {
 
         if (escolha == 1) {
             receitasEnviadas[indice].setStatus("Aprovada");
+            salvarReceitas();
             System.out.println("Receita aprovada com sucesso!");
 
         } else if (escolha == 2) {
             receitasEnviadas[indice].setStatus("Rejeitada");
+            salvarReceitas();
             System.out.println("Receita rejeitada!");
 
         } else if (escolha == 0) {
@@ -289,6 +355,8 @@ public class GerenciadorReceitas {
         receita.setModoPreparo(modoPreparo);
         receita.setCuriosidade(curiosidade);
 
+        salvarReceitas();
+
         System.out.println("\nReceita atualizada com sucesso!");
     }
 
@@ -330,6 +398,8 @@ public class GerenciadorReceitas {
 
         receitasEnviadas[quantidade - 1] = null;
         quantidade--;
+
+        salvarReceitas();
 
         System.out.println("Receita excluida com sucesso!");
     }

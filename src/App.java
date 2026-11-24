@@ -18,8 +18,12 @@ public class App {
         LoginAdministrador loginAdmin = new LoginAdministrador();
         PainelAdministrador painelAdmin = new PainelAdministrador();
 
-        Usuario usuario = null;
-        Administrador administrador = null;
+        // Carrega o usuario salvo
+        Usuario usuario = cadastro.carregarUsuario();
+
+        // Carrega o administrador salvo
+        Administrador administrador =
+                cadastroAdmin.carregarAdministrador();
 
         boolean logado = false;
         boolean adminLogado = false;
@@ -28,7 +32,7 @@ public class App {
 
         do {
             System.out.println("\n===== DEVBRODERS =====");
-            System.out.println("LIVRO DE RECEITAS DO BRASIL");
+            System.out.println("LIVRO DE RECEITAS");
             System.out.println("1 - Cardapios regionais");
             System.out.println("2 - Videos de culinaria");
             System.out.println("3 - Filmes para inspirar");
@@ -72,7 +76,6 @@ public class App {
 
                 case 6:
                     if (logado) {
-
                         System.out.println("\n===== MEUS FAVORITOS =====");
                         System.out.println("1 - Visualizar favoritos");
                         System.out.println("2 - Remover favorito");
@@ -84,13 +87,10 @@ public class App {
 
                         if (opcaoFavoritos == 1) {
                             favoritos.mostrarFavoritos();
-
                         } else if (opcaoFavoritos == 2) {
                             favoritos.removerFavorito(teclado);
-
                         } else if (opcaoFavoritos == 0) {
                             System.out.println("Voltando ao menu principal!");
-
                         } else {
                             System.out.println("Opcao invalida!");
                         }
@@ -101,7 +101,11 @@ public class App {
                     break;
 
                 case 7:
-                    gerenciador.enviarReceita(teclado, usuario);
+                    if (logado) {
+                        gerenciador.enviarReceita(teclado, usuario);
+                    } else {
+                        System.out.println("Voce precisa fazer login para enviar uma receita!");
+                    }
                     break;
 
                 case 8:

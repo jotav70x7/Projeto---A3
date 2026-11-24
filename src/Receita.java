@@ -47,21 +47,93 @@ public class Receita {
         this.status = status;
     }
 
-    public String getNome() { return nome; }
-    public String getAutor() { return autor; }
-    public String getStatus() { return status; }
-    public Regiao getRegiao() { return regiao; }
+    // Getters: permitem consultar os atributos
 
-    public void setNome(String nome) { this.nome = nome; }
-    public void setRegiao(Regiao regiao) { this.regiao = regiao; }
-    public void setCategoria(Categoria categoria) { this.categoria = categoria; }
-    public void setOrigem(String origem) { this.origem = origem; }
-    public void setDificuldade(String dificuldade) { this.dificuldade = dificuldade; }
-    public void setTempo(String tempo) { this.tempo = tempo; }
-    public void setIngredientes(String ingredientes) { this.ingredientes = ingredientes; }
-    public void setModoPreparo(String modoPreparo) { this.modoPreparo = modoPreparo; }
-    public void setCuriosidade(String curiosidade) { this.curiosidade = curiosidade; }
-    public void setStatus(String status) { this.status = status; }
+    public String getNome() {
+        return nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public Regiao getRegiao() {
+        return regiao;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public String getOrigem() {
+        return origem;
+    }
+
+    public String getDificuldade() {
+        return dificuldade;
+    }
+
+    public String getTempo() {
+        return tempo;
+    }
+
+    public String getIngredientes() {
+        return ingredientes;
+    }
+
+    public String getModoPreparo() {
+        return modoPreparo;
+    }
+
+    public String getCuriosidade() {
+        return curiosidade;
+    }
+
+    // Setters: permitem modificar os atributos
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setRegiao(Regiao regiao) {
+        this.regiao = regiao;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setOrigem(String origem) {
+        this.origem = origem;
+    }
+
+    public void setDificuldade(String dificuldade) {
+        this.dificuldade = dificuldade;
+    }
+
+    public void setTempo(String tempo) {
+        this.tempo = tempo;
+    }
+
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+
+    public void setModoPreparo(String modoPreparo) {
+        this.modoPreparo = modoPreparo;
+    }
+
+    public void setCuriosidade(String curiosidade) {
+        this.curiosidade = curiosidade;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public void mostrarReceita() {
 

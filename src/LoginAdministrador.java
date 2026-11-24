@@ -13,12 +13,12 @@ public class LoginAdministrador {
         }
 
         System.out.print("Digite seu email: ");
-        String email = teclado.nextLine();
+        String email = teclado.nextLine().trim();
 
         System.out.print("Digite sua senha: ");
         String senha = teclado.nextLine();
 
-        if (email.equals(administrador.getEmail())
+        if (email.equalsIgnoreCase(administrador.getEmail())
                 && senha.equals(administrador.getSenha())) {
 
             System.out.println("\nLogin administrativo realizado com sucesso!");
@@ -27,7 +27,9 @@ public class LoginAdministrador {
             return true;
 
         } else {
+
             System.out.println("\nEmail ou senha incorretos!");
+
             return false;
         }
     }
