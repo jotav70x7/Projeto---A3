@@ -284,8 +284,7 @@ public class Favoritos {
 
         System.out.print("\nDigite o numero da receita que deseja remover: ");
 
-        int opcao = teclado.nextInt();
-        teclado.nextLine();
+        int opcao = Entrada.lerInteiro(teclado);
 
         if (opcao >= 1 && opcao <= total) {
 
