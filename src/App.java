@@ -65,8 +65,7 @@ public class App {
             }
 
             System.out.print("Escolha uma opcao: ");
-            opcao = teclado.nextInt();
-            teclado.nextLine();
+            opcao = Entrada.lerInteiro(teclado);
 
             if (usuarioLogado != null) {
                 switch (opcao) {
@@ -85,8 +84,7 @@ public class App {
                         System.out.println("2 - Remover favorito");
                         System.out.println("0 - Voltar");
                         System.out.print("Escolha uma opcao: ");
-                        int opcaoFavoritos = teclado.nextInt();
-                        teclado.nextLine();
+                        int opcaoFavoritos = Entrada.lerInteiro(teclado);
 
                         if (opcaoFavoritos == 1) {
                             favoritos.mostrarFavoritos(usuarioLogado.getEmail());
