@@ -172,8 +172,7 @@ public class Cardapio {
             System.out.println("0 - Voltar ao menu principal");
             System.out.print("Escolha uma regiao: ");
 
-            opcao = teclado.nextInt();
-            teclado.nextLine();
+            opcao = Entrada.lerInteiro(teclado);
 
             // Busca as receitas aprovadas pelo administrador
             Receita[] aprovadas = gerenciador.getReceitasAprovadas();
@@ -285,8 +284,7 @@ public class Cardapio {
             System.out.println("0 - Voltar");
             System.out.print("Escolha uma receita: ");
 
-            opcao = teclado.nextInt();
-            teclado.nextLine();
+            opcao = Entrada.lerInteiro(teclado);
 
             if (opcao >= 1 && opcao <= receitas.length) {
 
@@ -298,8 +296,7 @@ public class Cardapio {
                     System.out.println("0 - Continuar");
                     System.out.print("Escolha uma opcao: ");
 
-                    int escolha = teclado.nextInt();
-                    teclado.nextLine();
+                    int escolha = Entrada.lerInteiro(teclado);
 
                     if (escolha == 1) {
                         favoritos.adicionarFavorito(
@@ -315,8 +312,7 @@ public class Cardapio {
                     System.out.println("0 - Voltar ao menu anterior");
                     System.out.print("Escolha uma opcao: ");
 
-                    continuar = teclado.nextInt();
-                    teclado.nextLine();
+                    continuar = Entrada.lerInteiro(teclado);
 
                     if (continuar != 1 && continuar != 0) {
                         System.out.println("Opcao invalida! Digite 1 ou 0.");
