@@ -1,0 +1,6 @@
+bin/
+*.class
+usuarios.txt
+administradores.txt
+favoritos.txt
+receitas.txt
