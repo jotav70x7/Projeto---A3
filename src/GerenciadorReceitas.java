@@ -103,8 +103,7 @@ public class GerenciadorReceitas {
             return;
         }
 
-        System.out.print("Categoria: ");
-        String categoria = teclado.nextLine().trim();
+        Categoria categoria = Categoria.selecionarCategoria(teclado);
 
         System.out.print("Origem da receita: ");
         String origem = teclado.nextLine().trim();
@@ -112,7 +111,7 @@ public class GerenciadorReceitas {
         System.out.print("Dificuldade: ");
         String dificuldade = teclado.nextLine().trim();
 
-        System.out.print("Tempo de preparo: ");
+        System.out.print("Tempo de preparo (ex.: 30 minutos ou 1 hora e 20 minutos): ");
         String tempo = teclado.nextLine().trim();
 
         System.out.print("Ingredientes: ");
@@ -124,7 +123,7 @@ public class GerenciadorReceitas {
         System.out.print("Curiosidade (opcional): ");
         String curiosidade = teclado.nextLine().trim();
 
-        if (nome.equals("") || categoria.equals("") || origem.equals("")
+        if (nome.equals("") || origem.equals("")
                 || dificuldade.equals("") || tempo.equals("")
                 || ingredientes.equals("") || modoPreparo.equals("")) {
 
@@ -135,7 +134,7 @@ public class GerenciadorReceitas {
         Receita receita = new Receita(
                 nome,
                 new Regiao(regiao),
-                new Categoria(categoria),
+                categoria,
                 origem,
                 dificuldade,
                 tempo,
@@ -316,8 +315,8 @@ public class GerenciadorReceitas {
             return;
         }
 
-        System.out.print("Nova categoria: ");
-        String categoria = teclado.nextLine().trim();
+        System.out.println("\nSelecione a nova categoria:");
+        Categoria categoria = Categoria.selecionarCategoria(teclado);
 
         System.out.print("Nova origem: ");
         String origem = teclado.nextLine().trim();
@@ -325,7 +324,7 @@ public class GerenciadorReceitas {
         System.out.print("Nova dificuldade: ");
         String dificuldade = teclado.nextLine().trim();
 
-        System.out.print("Novo tempo de preparo: ");
+        System.out.print("Novo tempo de preparo (ex.: 30 minutos ou 1 hora e 20 minutos): ");
         String tempo = teclado.nextLine().trim();
 
         System.out.print("Novos ingredientes: ");
@@ -337,7 +336,7 @@ public class GerenciadorReceitas {
         System.out.print("Nova curiosidade: ");
         String curiosidade = teclado.nextLine().trim();
 
-        if (nome.equals("") || categoria.equals("") || origem.equals("")
+        if (nome.equals("") || origem.equals("")
                 || dificuldade.equals("") || tempo.equals("")
                 || ingredientes.equals("") || modoPreparo.equals("")) {
 
@@ -347,7 +346,7 @@ public class GerenciadorReceitas {
 
         receita.setNome(nome);
         receita.setRegiao(new Regiao(regiao));
-        receita.setCategoria(new Categoria(categoria));
+        receita.setCategoria(categoria);
         receita.setOrigem(origem);
         receita.setDificuldade(dificuldade);
         receita.setTempo(tempo);
