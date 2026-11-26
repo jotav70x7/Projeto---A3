@@ -21,12 +21,12 @@ O sistema conta com as seguintes opções:
 - Ver os ingredientes e o modo de preparo das receitas.
 - Consultar receitas rápidas.
 - Buscar receitas pelo nome.
-- Filtrar receitas por categoria.
+- Filtrar receitas por categoria, usando oito opções padronizadas: Café da manhã, Almoço, Jantar, Lanche, Sobremesa, Bebidas, Acompanhamentos e Petiscos.
 - Acessar vídeos e filmes.
 - Criar uma conta e fazer login.
 - Adicionar e remover receitas dos favoritos.
-- Enviar receitas para avaliação.
-- Administrar as receitas enviadas pelos usuários.
+- Enviar receitas para avaliação, selecionando uma categoria e informando o tempo de preparo (por exemplo: "30 minutos" ou "1 hora e 20 minutos").
+- Visualizar receitas pendentes, aprovar ou rejeitar envios, consultar receitas aprovadas, editar e excluir receitas.
 
 ## Perfis de acesso
 
