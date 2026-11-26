@@ -37,7 +37,7 @@ public class Filmes {
             System.out.println("0 - Voltar");
             System.out.print("Escolha um filme: ");
 
-            opcao = teclado.nextInt();
+            opcao = Entrada.lerInteiro(teclado);
 
             if (opcao >= 1 && opcao <= nomes.length) {
 
