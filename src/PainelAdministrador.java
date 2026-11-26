@@ -17,8 +17,7 @@ public class PainelAdministrador {
             System.out.println("0 - Sair do painel");
             System.out.print("Escolha uma opcao: ");
 
-            opcao = teclado.nextInt();
-            teclado.nextLine();
+            opcao = Entrada.lerInteiro(teclado);
 
             switch (opcao) {
 
