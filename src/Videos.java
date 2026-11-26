@@ -23,7 +23,7 @@ public class Videos {
             }
             System.out.println("0 - Voltar");
             System.out.print("Escolha um video: ");
-            opcao = teclado.nextInt();
+            opcao = Entrada.lerInteiro(teclado);
             if (opcao >= 1 && opcao <= nomes.length) {
                 System.out.println("Acesse: " + links[opcao - 1]);
             } else if (opcao != 0) {
