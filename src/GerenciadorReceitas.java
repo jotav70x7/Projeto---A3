@@ -182,8 +182,7 @@ public class GerenciadorReceitas {
         mostrarPendentes();
 
         System.out.print("\nDigite 0 para voltar ou o numero da receita: ");
-        int opcao = teclado.nextInt();
-        teclado.nextLine();
+        int opcao = Entrada.lerInteiro(teclado);
 
         if (opcao == 0) {
             return;
@@ -216,8 +215,7 @@ public class GerenciadorReceitas {
         System.out.println("0 - Voltar");
         System.out.print("Escolha uma opcao: ");
 
-        int escolha = teclado.nextInt();
-        teclado.nextLine();
+        int escolha = Entrada.lerInteiro(teclado);
 
         if (escolha == 1) {
             receitasEnviadas[indice].setStatus("Aprovada");
@@ -262,8 +260,7 @@ public class GerenciadorReceitas {
         mostrarAprovadas();
 
         System.out.print("\nDigite 0 para voltar ou o numero da receita: ");
-        int opcao = teclado.nextInt();
-        teclado.nextLine();
+        int opcao = Entrada.lerInteiro(teclado);
 
         if (opcao == 0) {
             return;
@@ -364,8 +361,7 @@ public class GerenciadorReceitas {
         mostrarAprovadas();
 
         System.out.print("\nDigite 0 para voltar ou o numero da receita: ");
-        int opcao = teclado.nextInt();
-        teclado.nextLine();
+        int opcao = Entrada.lerInteiro(teclado);
 
         if (opcao == 0) {
             return;
