@@ -12,7 +12,7 @@ public class Cardapio {
                 "- 2 bananas maduras, mas firmes\n- Oleo para fritar",
                 "1. Descasque as bananas.\n2. Corte ao meio ou em fatias.\n3. Aqueca o oleo em uma frigideira.\n4. Frite ate dourar dos dois lados.\n5. Retire e coloque sobre papel-toalha.", ""),
 
-        new Receita("Beiju de tapioca", new Regiao("Norte"), new Categoria("Cafe da manha"),
+        new Receita("Beiju de tapioca", new Regiao("Norte"), new Categoria("Café da manhã"),
                 "Tradicao indigena muito presente na Regiao Norte.",
                 "Muito facil", "Aproximadamente 10 minutos",
                 "- 4 colheres de sopa de goma de tapioca hidratada\n- Uma pitada de sal, se desejar\n- Manteiga ou coco ralado, opcional",
@@ -30,13 +30,13 @@ public class Cardapio {
                 "- 500 g de macaxeira crua ralada\n- 2 ovos\n- 1 xicara de acucar\n- 200 ml de leite de coco\n- 2 colheres de sopa de manteiga",
                 "1. Misture os ovos, o acucar e a manteiga.\n2. Acrescente a macaxeira ralada e o leite de coco.\n3. Misture ate obter uma massa uniforme.\n4. Despeje em uma forma untada.\n5. Asse em forno preaquecido a 180 graus por aproximadamente 40 a 50 minutos, ate dourar e ficar firme.", ""),
 
-        new Receita("Macaxeira cozida", new Regiao("Norte"), new Categoria("Acompanhamento"),
+        new Receita("Macaxeira cozida", new Regiao("Norte"), new Categoria("Acompanhamentos"),
                 "Muito consumida na Regiao Norte.",
                 "Facil", "De 30 a 45 minutos, podendo variar",
                 "- 500 g de macaxeira descascada\n- Agua suficiente para cozinhar\n- Sal a gosto\n- Manteiga, opcional",
                 "1. Corte a macaxeira em pedacos.\n2. Coloque em uma panela com agua e sal.\n3. Cozinhe ate ficar macia.\n4. Escorra a agua.\n5. Sirva quente, com manteiga se desejar.\nOBS: utilize macaxeira propria para consumo e cozinhe completamente antes de comer.", ""),
 
-        new Receita("Farofa de farinha de mandioca", new Regiao("Norte"), new Categoria("Acompanhamento"),
+        new Receita("Farofa de farinha de mandioca", new Regiao("Norte"), new Categoria("Acompanhamentos"),
                 "Acompanhamento comum na culinaria amazonica e brasileira.",
                 "Facil", "Aproximadamente 10 minutos",
                 "- 2 xicaras de farinha de mandioca\n- 2 colheres de sopa de manteiga\n- 1/2 cebola picada\n- Sal a gosto",
@@ -49,7 +49,7 @@ public class Cardapio {
                 "1. Deixe a polpa amolecer ligeiramente.\n2. Bata no liquidificador com a banana ate ficar cremoso. Se necessario, acrescente um pouco de agua.\n3. Coloque em uma tigela.\n4. Acrescente a granola e, se desejar, mel.",
                 "No Para, o acai tradicionalmente pode ser consumido junto com peixe frito e farinha de mandioca, sem acucar ou granola."),
 
-        new Receita("Peixe frito", new Regiao("Norte"), new Categoria("Almoco"),
+        new Receita("Peixe frito", new Regiao("Norte"), new Categoria("Almoço"),
                 "Muito presente na alimentacao de comunidades amazonicas e ribeirinhas.",
                 "Facil", "Aproximadamente 25 minutos",
                 "- 500 g de file de peixe\n- 2 dentes de alho amassados\n- Suco de 1/2 limao\n- Sal a gosto\n- Farinha de trigo ou fuba para empanar, opcional\n- Oleo para fritar",
@@ -58,14 +58,14 @@ public class Cardapio {
 
     private Receita[] receitasNordeste = {
 
-        new Receita("Cuscuz nordestino", new Regiao("Nordeste"), new Categoria("Cafe da manha"),
+        new Receita("Cuscuz nordestino", new Regiao("Nordeste"), new Categoria("Café da manhã"),
                 "Muito tradicional na culinaria nordestina.",
                 "Facil", "Aproximadamente 15 minutos",
                 "- Flocos de milho\n- Agua\n- Sal",
                 "1. Misture os flocos de milho com agua e sal.\n2. Deixe descansar alguns minutos.\n3. Coloque na cuscuzeira.\n4. Cozinhe ate ficar macio.",
                 "Pode ser servido com manteiga, queijo ou ovos."),
 
-        new Receita("Baiao de dois", new Regiao("Nordeste"), new Categoria("Almoco"),
+        new Receita("Baiao de dois", new Regiao("Nordeste"), new Categoria("Almoço"),
                 "Prato muito conhecido no Ceara e em outros estados do Nordeste.",
                 "Media", "Aproximadamente 40 minutos",
                 "- Arroz\n- Feijao cozido\n- Cebola e alho\n- Queijo coalho",
@@ -89,14 +89,14 @@ public class Cardapio {
                 "1. Misture os ingredientes.\n2. Modele pequenas bolinhas.\n3. Coloque em uma forma.\n4. Asse ate crescer e dourar.",
                 "E um dos alimentos mais conhecidos de Minas Gerais."),
 
-        new Receita("Feijoada", new Regiao("Sudeste"), new Categoria("Almoco"),
+        new Receita("Feijoada", new Regiao("Sudeste"), new Categoria("Almoço"),
                 "Muito associada a culinaria do Rio de Janeiro.",
                 "Media", "Aproximadamente 2 horas",
                 "- Feijao preto\n- Carnes salgadas e defumadas\n- Alho e cebola\n- Louro",
                 "1. Dessalgue as carnes conforme necessario.\n2. Cozinhe o feijao.\n3. Acrescente as carnes.\n4. Tempere com alho, cebola e louro.\n5. Cozinhe ate ficar macio.",
                 "Costuma ser servida com arroz, couve e farofa."),
 
-        new Receita("Moqueca capixaba", new Regiao("Sudeste"), new Categoria("Almoco"),
+        new Receita("Moqueca capixaba", new Regiao("Sudeste"), new Categoria("Almoço"),
                 "Prato tradicional do Espirito Santo.",
                 "Media", "Aproximadamente 40 minutos",
                 "- Peixe em postas\n- Tomate\n- Cebola\n- Coentro\n- Azeite e urucum",
@@ -106,14 +106,14 @@ public class Cardapio {
 
     private Receita[] receitasSul = {
 
-        new Receita("Barreado", new Regiao("Sul"), new Categoria("Almoco"),
+        new Receita("Barreado", new Regiao("Sul"), new Categoria("Almoço"),
                 "Prato tradicional do litoral do Parana.",
                 "Media", "Varias horas",
                 "- Carne bovina\n- Cebola e alho\n- Cominho\n- Louro\n- Farinha de mandioca",
                 "1. Tempere a carne.\n2. Coloque em uma panela com os temperos.\n3. Cozinhe lentamente ate a carne desmanchar.\n4. Sirva com farinha e acompanhamentos.",
                 "O preparo tradicional e conhecido pelo cozimento longo."),
 
-        new Receita("Churrasco", new Regiao("Sul"), new Categoria("Almoco"),
+        new Receita("Churrasco", new Regiao("Sul"), new Categoria("Almoço"),
                 "Muito associado a cultura gaucha.",
                 "Facil", "Varia conforme a carne",
                 "- Carne de sua preferencia\n- Sal grosso",
@@ -130,21 +130,21 @@ public class Cardapio {
 
     private Receita[] receitasCentroOeste = {
 
-        new Receita("Arroz com pequi", new Regiao("Centro-Oeste"), new Categoria("Almoco"),
+        new Receita("Arroz com pequi", new Regiao("Centro-Oeste"), new Categoria("Almoço"),
                 "Muito conhecido na culinaria goiana.",
                 "Facil", "Aproximadamente 40 minutos",
                 "- Arroz\n- Pequi\n- Alho e cebola\n- Oleo e sal",
                 "1. Refogue alho e cebola.\n2. Acrescente o pequi.\n3. Adicione o arroz e a agua.\n4. Cozinhe ate o arroz ficar macio.\n5. Tenha cuidado com o caroço do pequi.",
                 "O caroço do pequi nao deve ser mordido por causa dos espinhos."),
 
-        new Receita("Galinhada", new Regiao("Centro-Oeste"), new Categoria("Almoco"),
+        new Receita("Galinhada", new Regiao("Centro-Oeste"), new Categoria("Almoço"),
                 "Prato presente em diferentes estados do Centro-Oeste.",
                 "Media", "Aproximadamente 50 minutos",
                 "- Frango em pedacos\n- Arroz\n- Alho e cebola\n- Tomate\n- Cheiro-verde",
                 "1. Tempere o frango.\n2. Doure os pedacos em uma panela.\n3. Acrescente alho, cebola e tomate.\n4. Coloque o arroz e agua.\n5. Cozinhe ate ficar pronto.",
                 "E uma refeicao preparada em uma unica panela."),
 
-        new Receita("Empadao goiano", new Regiao("Centro-Oeste"), new Categoria("Almoco"),
+        new Receita("Empadao goiano", new Regiao("Centro-Oeste"), new Categoria("Almoço"),
                 "Prato tradicional do estado de Goias.",
                 "Media", "Aproximadamente 1 hora",
                 "- Massa de empadao\n- Frango desfiado\n- Queijo\n- Guariroba, opcional\n- Molho de tomate",
@@ -425,15 +425,8 @@ public class Cardapio {
     private void filtrarPorCategoria(Scanner teclado, Favoritos favoritos,
                                      Usuario usuarioLogado, Receita[] aprovadas) {
 
-        System.out.println("\nCategorias disponiveis:");
-        System.out.println("Cafe da manha, Lanche, Almoco, Sobremesa e Acompanhamento");
-        System.out.print("Digite a categoria desejada: ");
-        String categoriaBusca = teclado.nextLine().trim();
-
-        if (categoriaBusca.equals("")) {
-            System.out.println("Digite uma categoria para realizar o filtro!");
-            return;
-        }
+        Categoria categoriaSelecionada = Categoria.selecionarCategoria(teclado);
+        String categoriaBusca = categoriaSelecionada.getNome();
 
         Receita[] todas = obterTodasReceitas(aprovadas);
         Receita[] encontradas = new Receita[todas.length];
