@@ -137,11 +137,11 @@ public class Receita {
 
     public void mostrarReceita() {
 
-        System.out.println("\\n========================================");
+        System.out.println("\n========================================");
         System.out.println("             " + nome.toUpperCase());
         System.out.println("========================================");
 
-        System.out.println("\\nINFORMACOES DA RECEITA");
+        System.out.println("\nINFORMACOES DA RECEITA");
         System.out.println("----------------------------------------");
         System.out.println("Regiao: " + regiao.getNome());
         System.out.println("Categoria: " + categoria.getNome());
@@ -149,21 +149,21 @@ public class Receita {
         System.out.println("Dificuldade: " + dificuldade);
         System.out.println("Tempo de preparo: " + tempo);
 
-        System.out.println("\\nINGREDIENTES");
+        System.out.println("\nINGREDIENTES");
         System.out.println("----------------------------------------");
         System.out.println(ingredientes);
 
-        System.out.println("\\nMODO DE PREPARO");
+        System.out.println("\nMODO DE PREPARO");
         System.out.println("----------------------------------------");
         System.out.println(modoPreparo);
 
         if (!curiosidade.equals("")) {
-            System.out.println("\\nVOCE SABIA?");
+            System.out.println("\nVOCE SABIA?");
             System.out.println("----------------------------------------");
             System.out.println(curiosidade);
         }
 
-        System.out.println("\\n----------------------------------------");
+        System.out.println("\n----------------------------------------");
         System.out.println("Receita enviada por: " + autor);
         System.out.println("========================================");
     }
