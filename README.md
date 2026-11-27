@@ -1,4 +1,4 @@
-# DEVBRODERS – Livro de Receitas do Brasil
+# DEVBRODERS – Livro de Receitas
 
 ## Sobre o projeto
 
