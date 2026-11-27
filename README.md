@@ -21,7 +21,7 @@ O sistema conta com as seguintes opções:
 - Ver os ingredientes e o modo de preparo das receitas.
 - Consultar receitas rápidas.
 - Buscar receitas pelo nome.
-- Filtrar receitas por categoria, usando oito opções padronizadas: Café da manhã, Almoço, Jantar, Lanche, Sobremesa, Bebidas, Acompanhamentos e Petiscos.
+- Filtrar receitas por categoria, usando oito opções padronizadas: Café da manhã, Almoço, Jantar, Lanche e Sobremesa.
 - Acessar vídeos e filmes.
 - Criar uma conta e fazer login.
 - Adicionar e remover receitas dos favoritos.
