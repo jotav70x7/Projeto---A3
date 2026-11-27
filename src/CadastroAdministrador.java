@@ -40,16 +40,7 @@ public class CadastroAdministrador {
             return null;
         }
 
-        // Verifica o formato basico do email
-        int posicaoArroba = email.indexOf("@");
-        int ultimoArroba = email.lastIndexOf("@");
-        int posicaoPonto = email.indexOf(".", posicaoArroba);
-
-        if (posicaoArroba <= 0
-                || posicaoArroba != ultimoArroba
-                || posicaoPonto <= posicaoArroba + 1
-                || posicaoPonto == email.length() - 1) {
-
+        if (!emailValido(email)) {
             System.out.println("Email invalido! Digite um email valido.");
             return null;
         }
@@ -64,6 +55,35 @@ public class CadastroAdministrador {
         System.out.println("\nAdministrador cadastrado com sucesso!");
 
         return administrador;
+    }
+
+    private boolean emailValido(String email) {
+        int arroba = email.indexOf("@");
+        if (arroba <= 0 || arroba != email.lastIndexOf("@")
+                || arroba == email.length() - 1) {
+            return false;
+        }
+
+        String parteLocal = email.substring(0, arroba);
+        String dominio = email.substring(arroba + 1);
+
+        if (!parteLocal.matches("[A-Za-z0-9._%+-]+")
+                || parteLocal.startsWith(".") || parteLocal.endsWith(".")
+                || parteLocal.contains("..")
+                || !dominio.matches("[A-Za-z0-9.-]+")
+                || !dominio.contains(".") || dominio.startsWith(".")
+                || dominio.endsWith(".") || dominio.contains("..")) {
+            return false;
+        }
+
+        String[] partesDominio = dominio.split("\\.");
+        for (String parte : partesDominio) {
+            if (parte.isEmpty() || parte.startsWith("-") || parte.endsWith("-")) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public Administrador carregarAdministrador() {

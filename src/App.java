@@ -114,7 +114,7 @@ public class App {
             } else if (adminLogado) {
                 switch (opcao) {
                     case 1:
-                        painelAdmin.mostrarPainel(teclado, gerenciador);
+                        painelAdmin.mostrarPainel(teclado, gerenciador, favoritos);
                         break;
                     case 2:
                         cardapio.mostrarMenu(teclado, favoritos, null, gerenciador);

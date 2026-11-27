@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class PainelAdministrador {
 
     public void mostrarPainel(Scanner teclado, GerenciadorReceitas gerenciador) {
+        mostrarPainel(teclado, gerenciador, null);
+    }
+
+    public void mostrarPainel(Scanner teclado, GerenciadorReceitas gerenciador,
+                             Favoritos favoritos) {
 
         int opcao;
 
@@ -34,7 +39,7 @@ public class PainelAdministrador {
                     break;
 
                 case 4:
-                    gerenciador.editarReceita(teclado);
+                    gerenciador.editarReceita(teclado, favoritos);
                     break;
 
                 case 5:

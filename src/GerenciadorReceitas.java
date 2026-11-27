@@ -256,6 +256,10 @@ public class GerenciadorReceitas {
     }
 
     public void editarReceita(Scanner teclado) {
+        editarReceita(teclado, null);
+    }
+
+    public void editarReceita(Scanner teclado, Favoritos favoritos) {
 
         mostrarAprovadas();
 
@@ -287,6 +291,9 @@ public class GerenciadorReceitas {
         }
 
         Receita receita = receitasEnviadas[indice];
+        String nomeAntigo = receita.getNome();
+        String regiaoAntiga = receita.getRegiao().getNome();
+        String autor = receita.getAutor();
 
         System.out.println("\n===== EDITAR RECEITA =====");
         receita.mostrarReceita();
@@ -352,6 +359,10 @@ public class GerenciadorReceitas {
         receita.setCuriosidade(curiosidade);
 
         salvarReceitas();
+
+        if (favoritos != null) {
+            favoritos.sincronizarReceita(nomeAntigo, regiaoAntiga, autor, receita);
+        }
 
         System.out.println("\nReceita atualizada com sucesso!");
     }

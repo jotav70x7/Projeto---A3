@@ -239,6 +239,30 @@ public class Favoritos {
         }
     }
 
+    // Atualiza os favoritos ligados a uma receita que foi editada.
+    public void sincronizarReceita(String nomeAntigo, String regiaoAntiga,
+                                   String autor, Receita receitaAtualizada) {
+        boolean atualizado = false;
+
+        for (int i = 0; i < quantidade; i++) {
+            Receita receitaSalva = receitasSalvas[i];
+
+            boolean mesmaReceita = receitaSalva == receitaAtualizada
+                    || (receitaSalva.getNome().equalsIgnoreCase(nomeAntigo)
+                    && receitaSalva.getRegiao().getNome().equalsIgnoreCase(regiaoAntiga)
+                    && receitaSalva.getAutor().equalsIgnoreCase(autor));
+
+            if (mesmaReceita) {
+                receitasSalvas[i] = receitaAtualizada;
+                atualizado = true;
+            }
+        }
+
+        if (atualizado) {
+            salvarFavoritos();
+        }
+    }
+
     // Mostra somente os favoritos do usuario logado.
     public void mostrarFavoritos(String emailUsuario) {
 

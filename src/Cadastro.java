@@ -46,12 +46,31 @@ public class Cadastro {
 
     private boolean emailValido(String email) {
         int arroba = email.indexOf("@");
-        int ponto = email.indexOf(".", arroba);
+        if (arroba <= 0 || arroba != email.lastIndexOf("@")
+                || arroba == email.length() - 1) {
+            return false;
+        }
 
-        return arroba > 0
-                && arroba == email.lastIndexOf("@")
-                && ponto > arroba + 1
-                && ponto < email.length() - 1;
+        String parteLocal = email.substring(0, arroba);
+        String dominio = email.substring(arroba + 1);
+
+        if (!parteLocal.matches("[A-Za-z0-9._%+-]+")
+                || parteLocal.startsWith(".") || parteLocal.endsWith(".")
+                || parteLocal.contains("..")
+                || !dominio.matches("[A-Za-z0-9.-]+")
+                || !dominio.contains(".") || dominio.startsWith(".")
+                || dominio.endsWith(".") || dominio.contains("..")) {
+            return false;
+        }
+
+        String[] partesDominio = dominio.split("\\.");
+        for (String parte : partesDominio) {
+            if (parte.isEmpty() || parte.startsWith("-") || parte.endsWith("-")) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public ArrayList<Usuario> carregarUsuarios() {
