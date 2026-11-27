@@ -8,8 +8,8 @@ A ideia do projeto é reunir receitas de diferentes regiões do Brasil em um só
 
 ## Integrantes
 
-- João Vitor
-- Alex
+- João Vitor Silva de Lima
+- Alex Gonçalves Jerônimo Leite
 - Davi Nogueira
 - Luis Felipe
 
